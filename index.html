@@ -18,7 +18,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
                     }
                 }
             }
@@ -33,19 +34,18 @@
 
 <body class=".font-manrope">
     <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
-
+        <div class="my-20">
+            <div class=" flex justify-between items-center flex-col lg:flex-row">
                 <div>
                     <h1 class="text-7xl font-extrabold">It's good <br>
                         tea time at The <br>
                         Tea House</h1>
                     <p class="py-6 text-xl font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction
                         To Your Taste Buds.</p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore More</button>
                 </div>
                 <div>
-                    <img src="images/banner.png" class="max-w-sm" />
+                    <img src="images/banner.png" class="" />
                     <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
                         <i class="fa-solid fa-star text-3xl text-amber-400"></i>
                         <div>
@@ -136,7 +136,7 @@
         <!-- super client section -->
 
         <section
-            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24">
             <div class="flex items-center lg:pr-28">
                 <div class="space-y-5">
                     <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br>
@@ -146,7 +146,7 @@
                         have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                         believable. </p>
-                    <button class="btn btn-primary">Show All</button>
+                    <button class="btn text-amber-600">Show All</button>
                 </div>
             </div>
             <!-- review container -->
@@ -213,7 +213,7 @@
                             discount</h2>
                         <p>There are many variations of passages of Lorem Ipsum available.</p>
                         <h4 class="font-bold">Learn More</h4>
-                        
+
                     </div>
                 </div>
                 <div class="card w-96 bg-base-100 shadow-xl">
@@ -224,7 +224,7 @@
                             discount</h2>
                         <p>There are many variations of passages of Lorem Ipsum available.</p>
                         <h4 class="font-bold">Learn More</h4>
-                        
+
                     </div>
                 </div>
                 <div class="card w-96 bg-base-100 shadow-xl">
@@ -235,7 +235,7 @@
                             discount</h2>
                         <p>There are many variations of passages of Lorem Ipsum available.</p>
                         <h4 class="font-bold">Learn More</h4>
-                        
+
                     </div>
                 </div>
 
@@ -244,8 +244,51 @@
 
 
     </main>
-    <footer>
-
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24"> 
+            <img src="./images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">get started</button>
+            </p>
+        </div>
+        <div class="footer p-10">
+            <nav>
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Legal</header>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+                <header class="footer-title">Newsletter</header>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="join">
+                        <input type="text" placeholder="username@site.com" class=" py-4 bg-transparent border-b-2 border-black outline-none" />
+                        <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white rounded-full"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <aside class="text-center mt-10">
+            <p>Copyright © 2024 - All right reserved by Sanjida Rahman</p>
+          </aside>
     </footer>
 
 </body>
